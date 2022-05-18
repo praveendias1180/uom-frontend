@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Development</title>
+    <script src="js/jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+    <p id="pid">This is a simple paragraph</p>
+    <p id="pid2">This is paragraph 2</p>
+    <script>
+        $(document).ready(function(){
+            console.log('The document is ready!')
+        });
+
+        document.getElementById('pid').onclick = function(){
+            alert('Clicked the paragraph');
+        }
+
+        $('#pid2').click(function(){ alert('Clicked 2')})
+    </script>
+</body>
+</html>
