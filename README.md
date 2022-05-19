@@ -1,7 +1,7 @@
 # Course 4 -  Frontend Web Development
 
 ## C201 - Python for Beginners (Done)
-## C202 - Web Design for Begineers (Done)
+## C202 - Web Design for Beginners (Done)
 ## C203 - Python Programming (Done)
 ## C204 - Front-end Web Development (Current)
 
