@@ -22,12 +22,20 @@ export class ProductsComponent implements OnInit {
       price: "100"
     },
     {
-      id: 1,
+      id: 2,
       name: "Flour",
       description: "White Basmathi Flour",
       created: "Jan 29, 2020",
       qty: 200,
       price: "100"
+    },
+    {
+      id: 3,
+      name: "Dhal",
+      description: "Red Dhal",
+      created: "Jan 28, 2020",
+      qty: 20,
+      price: "500"
     }
   ]
 
