@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { ContentLimiterPipe } from './content-limiter.pipe';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ContentLimiterPipe
+    ContentLimiterPipe,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
