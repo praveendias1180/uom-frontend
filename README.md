@@ -18,3 +18,7 @@ Full Stack Developer Specialization - University of Moratuwa
 # SPA Frameworks
 
 ![SPAs](spa-frames.png)
+
+# Angular
+
+![Angular CLI](cli.png)
