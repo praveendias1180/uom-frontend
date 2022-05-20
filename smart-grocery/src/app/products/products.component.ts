@@ -20,7 +20,7 @@ export class ProductsComponent implements OnInit {
       id: 1,
       name: "Rice",
       description: "White Basmathi Rice imported from Pakistan",
-      created: "Jan 29, 2020",
+      created: "2022-05-20",
       qty: 100,
       price: "100"
     },
