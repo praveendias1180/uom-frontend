@@ -10,6 +10,11 @@ export class AddProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('-- ngOnInit')
+  }
+
+  ngOnDestroy(): void {
+    console.log('-- ngOnDestroy')
   }
 
 }
