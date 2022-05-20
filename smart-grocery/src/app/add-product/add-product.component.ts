@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
+import { Product } from '../model/product.model';
+import { ProductService } from '../service/product.service';
 
 @Component({
   selector: 'app-add-product',
@@ -10,9 +12,14 @@ export class AddProductComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSubmit() {}
+  onSubmit() {
+    const values = this.productFrom.value as Product;
+    values.createdDate = new Date().toDateString();
+    this.productService.addProduct().subscribe(res => this.productFrom.reset() )  
+  }
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder,
+    private productService: ProductService) {}
 
   productFrom = this.fb.group({
     productName: ['', Validators.required],
