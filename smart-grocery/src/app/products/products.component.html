@@ -19,7 +19,7 @@
                 <tbody>
                     <tr *ngFor="let product of products let i = index" [ngClass]="rowIndex === i ? 'active' : ''" (click)="product_clicked(i)">
                         <th scope="row">{{product.id}}</th>
-                        <td>{{product.name}}</td>
+                        <td>{{product.name | uppercase}}</td>
                         <td>{{product.description}}</td>
                         <td>{{product.created}}</td>
                         <td [ngClass]="product.qty < 50 ? 'bg-danger' : ''">{{product.qty}}</td>
