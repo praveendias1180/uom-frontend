@@ -21,9 +21,9 @@
                         <th scope="row">{{product.id}}</th>
                         <td>{{product.name | uppercase}}</td>
                         <td>{{product.description}}</td>
-                        <td>{{product.created | date}}</td>
+                        <td>{{product.created | date: "MM/dd/YYYY"}}</td>
                         <td [ngClass]="product.qty < 50 ? 'bg-danger' : ''">{{product.qty}}</td>
-                        <td>{{product.price | currency}}</td>
+                        <td>{{product.price | currency: 'LKR'}}</td>
                         <td>
                             <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-eye icon"></i></button>
                             <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-pencil-square-o icon"></i></button>
