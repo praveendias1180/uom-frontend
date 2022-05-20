@@ -12,6 +12,9 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public isRowSelected: boolean = false;
+  public rowIndex?: number;
+
   products = [
     {
       id: 1,
@@ -38,5 +41,9 @@ export class ProductsComponent implements OnInit {
       price: "500"
     }
   ]
+
+  public product_clicked(seletedRow: number){
+    this.rowIndex = seletedRow
+  }
 
 }
