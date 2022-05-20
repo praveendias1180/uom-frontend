@@ -12,6 +12,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public showAddProduct: boolean = false;
   public isRowSelected: boolean = false;
   public rowIndex: number = 0;
 
@@ -47,4 +48,11 @@ export class ProductsComponent implements OnInit {
     this.isRowSelected = true
   }
 
+  public showAddProducts(){
+    this.showAddProduct = true;
+  }
+  
+  public hideAddProducts(){
+    this.showAddProduct = false;
+  }
 }
