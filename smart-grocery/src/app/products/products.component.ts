@@ -13,7 +13,7 @@ export class ProductsComponent implements OnInit {
   }
 
   public isRowSelected: boolean = false;
-  public rowIndex?: number;
+  public rowIndex: number = 0;
 
   products = [
     {
@@ -44,6 +44,7 @@ export class ProductsComponent implements OnInit {
 
   public product_clicked(seletedRow: number){
     this.rowIndex = seletedRow
+    this.isRowSelected = true
   }
 
 }

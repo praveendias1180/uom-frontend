@@ -25,8 +25,8 @@
                         <td [ngClass]="product.qty < 50 ? 'bg-danger' : ''">{{product.qty}}</td>
                         <td>{{product.price}}</td>
                         <td>
-                            <i class="fa fa-eye icon"></i>
-                            <i class="fa fa-pencil-square-o icon"></i>
+                            <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-eye icon"></i></button>
+                            <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-pencil-square-o icon"></i></button>
                         </td>
                     </tr>
                 </tbody>

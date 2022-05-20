@@ -15,3 +15,9 @@ tbody tr:hover{
 tr.active {
     background-color: #eee;
 }
+
+.grocery-btn{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
