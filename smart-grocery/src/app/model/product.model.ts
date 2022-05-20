@@ -7,6 +7,6 @@ export interface Product{
     expiredDate: string;
     manufacturedDate: string;
     createdDate: string;
-    quantity: string;
+    quantity: number;
     unitPrice: string;
 }

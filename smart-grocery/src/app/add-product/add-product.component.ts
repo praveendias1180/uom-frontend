@@ -15,7 +15,7 @@ export class AddProductComponent implements OnInit {
   onSubmit() {
     const values = this.productFrom.value as Product;
     values.createdDate = new Date().toDateString();
-    this.productService.addProduct().subscribe(res => this.productFrom.reset() )  
+    this.productService.addProduct(values).subscribe(res => this.productFrom.reset() )  
   }
 
   constructor(private fb: FormBuilder,

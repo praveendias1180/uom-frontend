@@ -21,11 +21,11 @@
                 <tbody>
                     <tr *ngFor="let product of products let i = index" [ngClass]="rowIndex === i ? 'active' : ''" (click)="product_clicked(i)">
                         <th scope="row">{{product.id}}</th>
-                        <td>{{product.name | uppercase}}</td>
+                        <td>{{product.productName | uppercase}}</td>
                         <td>{{product.description | contentLimiter}}</td>
-                        <td>{{product.created | date: "MM/dd/YYYY"}}</td>
-                        <td [ngClass]="product.qty < 50 ? 'bg-danger' : ''">{{product.qty}}</td>
-                        <td>{{product.price | currency: 'LKR'}}</td>
+                        <td>{{product.createdDate | date: "MM/dd/YYYY"}}</td>
+                        <td [ngClass]="product.quantity < 50 ? 'bg-danger' : ''">{{product.quantity}}</td>
+                        <td>{{product.unitPrice | currency: 'LKR'}}</td>
                         <td>
                             <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-eye icon"></i></button>
                             <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-pencil-square-o icon"></i></button>
