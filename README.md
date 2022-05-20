@@ -22,3 +22,7 @@ Full Stack Developer Specialization - University of Moratuwa
 # Angular
 
 ![Angular CLI](cli.png)
+
+## Data Binding
+
+![Punctuations](binding-punctuations.png)
