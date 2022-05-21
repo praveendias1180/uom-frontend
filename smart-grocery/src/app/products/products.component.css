@@ -27,3 +27,8 @@ tr.active {
     justify-content: space-between;
     align-items: center;
 }
+
+h3 span{
+    display: inline-block;
+    margin-left: 10px;
+}
