@@ -8,7 +8,8 @@ import { ContentLimiterPipe } from './content-limiter.pipe';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { EditProductComponent } from './edit-product/edit-product.component'
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { ViewProductComponent } from './view-product/view-product.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditProductComponent } from './edit-product/edit-product.component'
     ProductsComponent,
     ContentLimiterPipe,
     AddProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
