@@ -30,6 +30,9 @@ export class ProductsComponent implements OnInit {
   }
 
   public showAddProducts(){
+    if (this.showEditProduct) {
+      this.showEditProduct = false;
+    }
     this.showAddProduct = true;
   }
   
