@@ -27,6 +27,10 @@ Full Stack Developer Specialization - University of Moratuwa
 
 ![Punctuations](binding-punctuations.png)
 
+# Form Types
+
+![Form Types](form-types.png)
+
 # Smart Grocery
 
 ## Add Product
@@ -37,6 +41,9 @@ Full Stack Developer Specialization - University of Moratuwa
 
 ![Update Product](edit-product.png)
 
-# Form Types
+# The Certificate
 
-![Form Types](form-types.png)
+## Angular Project and Assessment Complete!
+
+![Front End Certified](front-end-certificate.png)
+
