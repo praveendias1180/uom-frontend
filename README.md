@@ -36,3 +36,7 @@ Full Stack Developer Specialization - University of Moratuwa
 ## Edit Product
 
 ![Update Product](edit-product.png)
+
+# Form Types
+
+![Form Types](form-types.png)
