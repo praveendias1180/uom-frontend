@@ -30,7 +30,15 @@
                         <td [ngClass]="product.quantity < 50 ? 'bg-danger' : ''" class="textright">{{product.quantity}}</td>
                         <td class="textright">{{product.unitPrice | currency: 'LKR '}}</td>
                         <td>
-                            <button class="grocery-btn" [disabled]="rowIndex !== i || !isRowSelected" ><i class="fa fa-eye icon"></i></button>
+                            <a [routerLink]="['/product-detail-view', product.id]">
+                                <button
+                                  type="button"
+                                  [disabled]="rowIndex != i"
+                                  class="btn-xs icon"
+                                >
+                                  <i class="fa fa-eye"></i>
+                                </button>
+                              </a>
                             <button
                             type="button"
                             [disabled]="rowIndex != i"
