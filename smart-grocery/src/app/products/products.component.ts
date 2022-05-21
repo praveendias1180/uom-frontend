@@ -20,6 +20,8 @@ export class ProductsComponent implements OnInit {
   public rowIndex: number = 0;
   isLoading: boolean = false;
   public products: Product[] = []
+  showEditProduct!: boolean;
+  selectedProduct!: Product;
 
   public product_clicked(seletedRow: number){
     this.rowIndex = seletedRow
@@ -42,5 +44,20 @@ export class ProductsComponent implements OnInit {
 
   refresh(){
     this.getProducts()
+  }
+
+  OpenEditProductView() {
+    if (this.showAddProduct) {
+      this.showAddProduct = false;
+    }
+    this.showEditProduct = true;
+  }
+
+  updateProductList() {
+    this.getProducts();
+  }
+
+  closeEditView() {
+    this.showEditProduct = false;
   }
 }

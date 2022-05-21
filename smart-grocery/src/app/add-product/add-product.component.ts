@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
 import { Product } from '../model/product.model';
 import { ProductService } from '../service/product.service';
@@ -10,12 +10,22 @@ import { ProductService } from '../service/product.service';
 })
 export class AddProductComponent implements OnInit {
 
+  isDataUploading = false;
+  @Output() cancelAddView: EventEmitter<void> = new EventEmitter<void>();
+  @Output() productAddEvent: EventEmitter<void> = new EventEmitter<void>();
+
   ngOnInit(): void {}
 
   onSubmit() {
     const values = this.productFrom.value as Product;
     values.createdDate = new Date().toDateString();
-    this.productService.addProduct(values).subscribe(res => this.productFrom.reset() )  
+    this.isDataUploading = true;
+    this.productService.addProduct(values as Product).subscribe((res) => {
+      this.productAddEvent.emit();
+      this.isDataUploading = false;
+      this.productFrom.reset();
+    });
+
   }
 
   constructor(private fb: FormBuilder,
@@ -35,6 +45,10 @@ export class AddProductComponent implements OnInit {
 
   get f() {
     return this.productFrom.controls;
+  }
+
+  cancel() {
+    this.cancelAddView.emit();
   }
 
 }
